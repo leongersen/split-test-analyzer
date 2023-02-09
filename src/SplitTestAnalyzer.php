@@ -123,7 +123,7 @@ final class SplitTestAnalyzer implements \IteratorAggregate
         return $this->result;
     }
 
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         $result = $this->getResult();
         yield from $result;
